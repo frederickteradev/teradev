@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bootstrap-css/bootstrap.min.css" />
+    <title>TeraDev Agencia Digital</title>
+  </head>
+
+  <style>
+    .fixed-button {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 1050;
+      border-radius: 100%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  </style>
+
+  <body style="background-color: rgb(11, 0, 20); color: white">
+    <!-- Header -->
+    <header class="container-fluid">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: rgb(11, 0, 20)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center">
+            <!-- Logo -->
+            <img
+              src="img/logo.png"
+              alt="Logo TeraDev"
+              class="img-fluid rounded-circle logo-animation imagen-logo"
+              style="width: 115px; height: auto"
+            />
+
+            <!-- Título -->
+            <h1 class="ms-2 mb-0 fw-bold" style="font-size: 2.5rem">
+              <span style="color: white">Tera</span
+              ><span class="logo-animation" style="color: rgb(180, 11, 188)"
+                >Dev</span
+              >
+            </h1>
+
+            <!-- Botón Navbar -->
+            <button
+              class="navbar-toggler boton-navbar"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio"
+                  ><i class="fa fa-home fa-lg"></i> Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#acerca-de"
+                  ><i class="fa fa-building fa-lg"></i> Sobre TeraDev</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios"
+                  ><i class="fa fa-cogs fa-lg"></i> Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos"
+                  ><i class="fa fa-briefcase fa-lg"></i> Proyectos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto"
+                  ><i class="fa fa-mobile-alt fa-lg"></i> Contactos</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <a
+      href="https://wa.me/584262854197"
+      type="button"
+      class="btn btn-outline-success btn-md fixed-button"
+    >
+      <svg
+        viewBox="0 0 256 259"
+        width="24"
+        height="24"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid"
+      >
+        <path
+          d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 
+              111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385
+               0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
+          fill="#00E676"
+        />
+        <path
+          d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322
+               6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688
+                15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834
+                 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 
+                 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18
+                  145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698
+                  0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093
+                  2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488
+                  0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185
+                  2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 
+                  13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557
+                  31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 
+                  10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 
+                   2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
+          fill="#FFF"
+        />
+      </svg>
+    </a>
+
+    <section id="inicio" class="container py-5">
+      <h2
+        class="text-center fw-bold display-5 py-4"
+        style="color: rgb(180, 11, 188)"
+      >
+        <span style="color: white">Bienvenidos a Tera</span
+        ><span style="color: rgb(180, 11, 188)">Dev</span>
+      </h2>
+      <div class="row text-light">
+        <div class="col-md-6 mb-4">
+          <div class="contendor-img text-center seleccion-img gif-animation">
+            <img
+              src="img/inicio.gif"
+              alt="Gif Animado TeraDev"
+              class="img-fluid rounded"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4 d-flex align-items-center">
+          <div class="contenido-inicio inicio-animation">
+            <p class="text-container">
+              <strong
+                >Tera<span style="color: rgb(180, 11, 188)">Dev,</span></strong
+              >
+              <span class="destacado">Agencia Digital</span>, del estado
+              <span class="destacado">Monagas, Venezuela</span>, Creamos
+              <span class="destacado">páginas web</span>, aplicaciones y
+              sistemas útiles que ayudan a
+              <span class="destacado">pequeños negocios</span> y emprendedores a
+              crecer, <span class="destacado">vender más</span> y trabajar
+              mejor. Soluciones prácticas, con
+              <span class="destacado">diseño atractivo</span> y funcionamiento
+              sólido.
+            </p>
+            <a
+              href="mailto:teradev404@gmail.com"
+              type="button"
+              class="btn btn-outline-light btn-md btn-inicio"
+            >
+              <svg
+                style="width: 24px; height: 24px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 49.4 512 399.42"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <g fill-rule="nonzero">
+                    <path
+                      fill="#4285f4"
+                      d="M34.91 448.818h81.454V251L0 163.727V413.91c0 19.287 15.622 34.91 34.91 34.91z"
+                    />
+                    <path
+                      fill="#34a853"
+                      d="M395.636 448.818h81.455c19.287 0 34.909-15.622 34.909-34.909V163.727L395.636 251z"
+                    />
+                    <path
+                      fill="#fbbc04"
+                      d="M395.636 99.727V251L512 163.727v-46.545c0-43.142-49.25-67.782-83.782-41.891z"
+                    />
+                  </g>
+                  <path
+                    fill="#ea4335"
+                    d="M116.364 251V99.727L256 204.455 395.636 99.727V251L256 355.727z"
+                  />
+                  <path
+                    fill="#c5221f"
+                    fill-rule="nonzero"
+                    d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z"
+                  />
+                </g>
+              </svg>
+              teradev@gmail.com</a
+            >
+
+            <a
+              href="https://wa.me/584262854197"
+              type="button"
+              class="btn btn-outline-success btn-md btn-inicio"
+            >
+              <svg
+                viewBox="0 0 256 259"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMid"
+              >
+                <path
+                  d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 
+                                111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385
+                                 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
+                  fill="#00E676"
+                />
+                <path
+                  d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322
+                                 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688
+                                  15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834
+                                   0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 
+                                   22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18
+                                    145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698
+                                    0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093
+                                    2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488
+                                    0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185
+                                    2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 
+                                    13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557
+                                    31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 
+                                    10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 
+                                     2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
+                  fill="#FFF"
+                />
+              </svg>
+
+              +58 426-285-4197</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-success">
+      <hr />
+    </div>
+    <!-- Sección Acerca de -->
+    <section id="acerca-de" class="container py-5">
+      <div class="row text-light">
+        <div class="col-md-6 mb-4">
+          <div class="ps-4">
+            <h2
+              class="fw-bold mb-4 text-center display-5"
+              style="color: rgb(200, 70, 210)"
+            >
+              Sobre <span style="color: #fff">Tera</span>Dev
+            </h2>
+            <p>
+              <span class="destacado">TeraDev</span> es una
+              <span class="destacado">agencia digital unipersonal</span> ubicada
+              en <span class="destacado">Monagas, Venezuela</span>, dedicada a
+              crear <span class="destacado">soluciones web</span> prácticas,
+              funcionales y adaptadas a
+              <span class="destacado">negocios reales</span>.
+            </p>
+
+            <p>
+              Detrás de <span class="destacado">TeraDev</span> hay una sola
+              mente encargada de todo el proceso: desde el
+              <span class="destacado">diseño visual</span> hasta el
+              <span class="destacado">desarrollo lógico</span> de cada sistema.
+              Cada proyecto se trabaja con
+              <span class="destacado">enfoque</span>,
+              <span class="destacado">cercanía</span> y
+              <span class="destacado">compromiso</span>, cuidando tanto el
+              <span class="destacado">aspecto</span> como el
+              <span class="destacado">funcionamiento</span>.
+            </p>
+
+            <p>
+              El <span class="destacado">objetivo</span> es claro: ayudar a
+              <span class="destacado">marcas personales</span>,
+              <span class="destacado">pequeños negocios</span> y
+              <span class="destacado">emprendedores</span> a tener
+              <span class="destacado">presencia digital</span> sin
+              complicaciones, con
+              <span class="destacado">soluciones modernas</span>,
+              <span class="destacado">útiles</span> y
+              <span class="destacado">bien pensadas</span>.
+            </p>
+
+            <p>
+              En <span class="destacado">TeraDev</span>, cada proyecto nace
+              <span class="destacado">desde cero</span> y con
+              <span class="destacado">propósito</span>. Con experiencia en
+              <span class="destacado">tiendas online</span>,
+              <span class="destacado">páginas para reservas</span>,
+              <span class="destacado">control de datos</span> y
+              <span class="destacado">generación de reportes</span>, cada
+              trabajo se adapta a lo que realmente necesitas.
+              <span class="destacado">Sin rodeos</span>,
+              <span class="destacado">sin tecnicismos</span>, y con
+              <span class="destacado">trato directo</span>.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <div class="text-center seleccion-img">
+            <img
+              src="img/acerca-de.gif"
+              alt="Gif Animado Acerca de TeraDev"
+              class="img-fluid img-thumbnail rounded"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-success">
+      <hr />
+    </div>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="container py-5">
+      <h2
+        class="fw-bold mb-4 display-5 text-center"
+        style="color: rgb(200, 70, 210)"
+      >
+        Servicios
+      </h2>
+      <div class="row text-light">
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-light p-3 h-100 seleccion">
+            <img
+              src="img/desarrollo-web.gif"
+              data-gif="img/desarrollo-web.gif"
+              class="card-img-top gif-controlado"
+              alt="imagen1"
+            />
+            <div class="card-body">
+              <h4 class="card-title text-center pb-2 fw-bold">
+                Desarrollo de Sitios Web a tu Medida
+              </h4>
+
+              <p class="card-text">
+                <span class="text-warning me-2">•</span
+                ><span class="destacado">Creación de Páginas Web</span>
+                informativas y modernas.
+                <br />
+                <span class="text-warning me-2">•</span
+                ><span class="destacado">Diseño responsivo</span> adaptable a
+                dispositivos móviles, tabletas, computadoras, etc.
+                <br />
+                <span class="text-warning me-2">•</span
+                ><span class="destacado">Catálogos Online</span>
+                para mostrar productos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-light p-3 h-100 seleccion">
+            <img src="img/negocio.gif" class="card-img-top" alt="imagen2" />
+            <div class="card-body">
+              <h4 class="card-title fw-bold text-center">
+                Tiendas y Automatización
+              </h4>
+              <p class="card-text">
+                <span class="text-warning me-2">•</span
+                ><span class="destacado">Desarrollo de Tiendas Online</span>
+                con tecnologías modernas.
+                <br />
+                <span class="text-warning me-2">•</span
+                ><span class="destacado">Desarrollo de herramientas</span> para
+                optimizar procesos y automatizar tareas repetitivas (como
+                sistemas de reservas, aplicaciones de pedidos o generación de
+                reportes).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-light p-3 h-100 seleccion">
+            <img src="img/silla.gif" class="card-img-top" alt="imagen3" />
+            <div class="card-body">
+              <h4 class="card-title fw-bold text-center">Soporte y Mejoras</h4>
+              <p class="card-text">
+                <span class="text-warning me-2">•</span
+                ><span class="destacado">Actualizaciones</span> para asegurarte
+                de que el sitio esté al día con las últimas tecnologías.
+                <br />
+                <span class="text-warning me-2">•</span
+                ><span class="destacado">Arreglo de fallas</span> o ajustes
+                visuales.
+                <br />
+                <span class="text-warning me-2">•</span
+                ><span class="destacado"></span
+                ><span class="destacado">Añadir funciones nuevas</span>
+                según tus necesidades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-success">
+      <hr />
+    </div>
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="proyectos py-5">
+      <div class="container">
+        <h2
+          class="fw-bold mb-4 display-5 text-center"
+          style="color: rgb(200, 70, 210)"
+        >
+          Nuestros Proyectos
+        </h2>
+        <p class="text-center lead py-4">
+          A continuación, algunos de los sistemas web y tiendas online que hemos
+          desarrollado, diseñados para ofrecer soluciones eficientes.
+        </p>
+        <div class="row justify-content-center">
+          <!-- Proyecto 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="card card-hover bg-dark text-light">
+              <img
+                src="img/proyecto1.png"
+                class="card-img-top rounded-top"
+                alt="Proyecto 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold destacado">
+                  Tienda Online de Ropa "A La Medida"
+                </h5>
+                <p class="card-text">
+                  <span class="destacado">A La Medida</span>, ubicada en
+                  <span class="destacado">Caripito, Monagas, Venezuela</span>,
+                  es una tienda física de confección que ahora cuenta con su
+                  tienda online. A través de
+                  <span class="destacado">WhatsApp</span>, los clientes pueden
+                  solicitar
+                  <span class="destacado">prendas personalizadas</span>,
+                  mientras que la plataforma integra
+                  <span class="destacado">productos</span> para facilitar
+                  pedidos y explorar diseños exclusivos.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary text-light"
+                    ><i class="bi bi-bootstrap fs-2"></i> Bootstrap</span
+                  >
+                  <span class="badge bg-danger"
+                    ><i class="fab fa-php" style="font-size: 1.8rem"></i>
+                    PHP</span
+                  >
+                </div>
+                <div class="d-flex justify-content-between gap-2">
+                  <a
+                    href="https://a-la-medida-shop.netlify.app"
+                    target="_blank"
+                    class="btn btn-outline-light btn-card"
+                  >
+                    <i class="fas fa-globe fa-lg"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 mb-4">
+            <div class="card card-hover bg-dark text-light">
+              <img
+                src="img/proyecto2.png"
+                class="card-img-top rounded-top"
+                alt="Proyecto 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold destacado">
+                  Sistema Automatizado de Historias Clínicas y Citas "FisioH&C"
+                </h5>
+                <p class="card-text">
+                  <span class="destacado">FisioH&C</span> es un Sistema
+                  Automatizado para gestionar citas e historias clínicas en la
+                  Unidad de Rehabilitación
+                  <span class="destacado">"Neuro Mundo"</span>, en
+                  <span class="destacado">Maturín, Monagas</span>, Venezuela.
+                  Permite programar consultas, acceder a registros médicos y
+                  recibir la
+                  <span class="destacado">historia clínica</span> digitalmente.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary"
+                    ><i class="fab fa-html5"></i> HTML5</span
+                  >
+                  <span class="badge bg-info text-dark"
+                    ><i class="fab fa-css3"></i> CSS3</span
+                  >
+                  <span class="badge bg-warning text-dark"
+                    ><i class="fab fa-js"></i> JavaScript</span
+                  >
+                  <span class="badge bg-danger"
+                    ><i class="fab fa-php" style="font-size: 1.8rem"></i>
+                    PHP</span
+                  >
+                </div>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://proyecto1.com"
+                    data-bs-target="#proyecto1"
+                    data-bs-toggle="modal"
+                    target="_blank"
+                    class="btn btn-outline-light btn-card"
+                  >
+                    <i class="fas fa-eye fa-lg"></i> Ver mas
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-md-6 mb-4">
+            <div class="card card-hover bg-dark text-light">
+              <img
+                src="img/proyecto3.png"
+                class="card-img-top rounded-top"
+                alt="Proyecto 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold destacado">
+                  Actualización al Sistema de Historias Clínicas y Citas
+                  "FisioH&C"
+                </h5>
+                <p class="card-text">
+                  Estamos trabajando en una mejora y actualización
+                  <span class="destacado">FisioH&C</span>, con nuevas funciones,
+                  un <span class="destacado">nuevo aspecto</span> y una gestión
+                  más amplia de <span class="destacado">citas</span> e
+                  <span class="destacado">historias clínicas</span> en la Unidad
+                  de Rehabilitación
+                  <span class="destacado">"Neuro Mundo"</span>. Actualmente,
+                  ofrecemos una <span class="destacado">demo no funcional</span>
+                  para pruebas antes de su implementación oficial.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-primary text-light"
+                    ><i class="bi bi-bootstrap fs-2"></i> Bootstrap</span
+                  >
+                  <span class="badge bg-danger"
+                    ><i class="fab fa-php" style="font-size: 1.8rem"></i>
+                    PHP</span
+                  >
+                </div>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://fisiohyc.netlify.app/"
+                    target="_blank"
+                    class="btn btn-outline-light btn-card"
+                  >
+                    <i class="fas fa-globe fa-lg"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 4 -->
+          <!-- <div class="col-md-6 mb-4">
+            <div class="card card-hover bg-dark text-light">
+              <img
+                src="img/proyecto2.png"
+                class="card-img-top rounded-top"
+                alt="Proyecto 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center fw-bold">Proyecto 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge bg-success"
+                    ><i class="fab fa-python"></i> Python</span
+                  >
+                  <span class="badge bg-secondary"
+                    ><i class="fab fa-python"></i> Django</span
+                  >
+                </div>
+                <div class="d-flex justify-content-between">
+                  <a
+                    href="https://proyecto2.com"
+                    data-bs-target="#proyecto2"
+                    data-bs-toggle="modal"
+                    target="_blank"
+                    class="btn btn-outline-light btn-card"
+                  >
+                    <i class="fas fa-globe"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <div class="text-success">
+      <hr />
+    </div>
+    <section id="contacto" class="container py-5">
+      <div class="row align-items-center">
+        <!-- Métodos de Contacto -->
+        <div class="col-md-6">
+          <h2
+            class="fw-bold display-5 b-4 text-center"
+            style="color: rgb(200, 70, 210)"
+          >
+            Contáctenos
+          </h2>
+          <p class="text-light lead mb-4">
+            Elige la forma que prefieras para ponerte en contacto con nosotros.
+            ¡Estamos aquí para ayudarte!
+          </p>
+
+          <div class="contact-card">
+            <!-- Correo -->
+            <a
+              href="mailto:teradev404@gmail.com"
+              class="card-link text-decoration-none"
+            >
+              <div class="card bg-dark text-light p-3 mb-3 card-c">
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                  <div>
+                    <h5 class="mb-0">Correo Electrónico</h5>
+                    <p class="mb-0">teradev@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/584262854197"
+              target="_blank"
+              class="card-link text-decoration-none"
+            >
+              <div class="card bg-dark text-light p-3 mb-3 card-c">
+                <div class="d-flex align-items-center">
+                  <i class="fab fa-whatsapp fa-2x text-success me-3"></i>
+                  <div>
+                    <h5 class="mb-0">WhatsApp</h5>
+                    <p class="mb-0">+58 426-285-4197</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- instagram -->
+            <a
+              href="https://www.instagram.com/teradev404"
+              target="_blank"
+              class="card-link text-decoration-none"
+            >
+              <div class="card bg-dark text-light p-3 mb-3 card-c">
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fab fa-instagram fa-2x me-3"
+                    style="color: #e4405f"
+                  ></i>
+                  <div>
+                    <h5 class="mb-0">Instagram</h5>
+                    <p class="mb-0">@teradev404</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagen del chat de WhatsApp -->
+
+        <div class="col-md-6 text-center">
+          <h5 class="fw-bold mb-4 mt-4 text-secondary">
+            Escríbenos en Nuestro <span class="text-success">WhatsApp</span>
+          </h5>
+          <img
+            src="img/contacto.jpg"
+            alt="Chat de WhatsApp"
+            class="img-fluid rounded"
+            style="max-width: 100%; height: auto; border-radius: 10px"
+          />
+
+          <!-- Simulación del input de chat -->
+          <div
+            class="chat-input mt-3 d-flex align-items-center p-2"
+            style="background-color: #202c33; border-radius: 25px"
+          >
+            <!-- Emoji -->
+            <i
+              class="fas fa-smile text-light me-2"
+              style="font-size: 1.5rem; cursor: pointer"
+            ></i>
+
+            <!-- Input -->
+            <input
+              type="text"
+              class="form-control bg-dark text-light border-0"
+              placeholder="Escribe un mensaje..."
+              style="flex-grow: 1"
+            />
+
+            <!-- Clip -->
+            <i
+              class="fas fa-paperclip text-light mx-2"
+              style="font-size: 1.5rem; cursor: pointer"
+            ></i>
+
+            <!-- Cámara -->
+            <i
+              class="fas fa-camera text-light mx-2"
+              style="font-size: 1.5rem; cursor: pointer"
+            ></i>
+
+            <!-- Botón de Enviar -->
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/+584262854197"
+              style="
+                background-color: rgb(180, 70, 210);
+                border-color: rgb(180, 11, 188);
+                border-radius: 50%;
+              "
+            >
+              <i class="fas fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4">
+      <div class="container">
+        <div class="row text-center justify-content-center mb-4">
+          <div class="col-12">
+            <h2 class="footer-heading">
+              Tera<span style="color: rgb(180, 11, 188)">Dev</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-auto">
+            <a href="#inicio" class="footer-link">Inicio</a>
+          </div>
+          <div class="col-auto">
+            <a href="#acerca-de" class="footer-link">Acerca de</a>
+          </div>
+          <div class="col-auto">
+            <a href="#servicios" class="footer-link">Servicios</a>
+          </div>
+          <div class="col-auto">
+            <a href="#proyectos" class="footer-link">Proyectos</a>
+          </div>
+          <div class="col-auto">
+            <a href="#contacto" class="footer-link">Contactos</a>
+          </div>
+        </div>
+        <div class="row text-center mb-3">
+          <div class="col">
+            <a
+              href="https://www.instagram.com/teradev404"
+              target="_blank"
+              class="social-link instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://wa.me/584262854197"
+              target="_blank"
+              class="social-link whatsapp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:teradev404@gmail.com" class="social-link gmail">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <p class="mb-0">© 2025 TeraDev | Todos los derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--ventanas modales-->
+
+    <div class="modal fade" id="proyecto1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h4 class="modal-title text-white">FisioH&C</h4>
+            <button
+              class="btn-close"
+              data-bs-dissmis="modal"
+              aria-label="close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div
+              id="carouselExampleRide"
+              class="carousel slide pb-4"
+              data-bs-ride="true"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/1.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/2.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/3.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/4.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/5.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/6.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/7.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/8.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/9.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/10.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev pb-2"
+                type="button"
+                data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleRide"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- <h5 class="mt-4">Sistema</h5>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              consectetur dolorum suscipit. Repellendus velit molestiae
+              perspiciatis perferendis nostrum quisquam sequi accusantium quos
+              quasi repudiandae! Nobis repellendus nostrum delectus earum modi.
+            </p> -->
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-lg btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="proyecto2">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary">Proyecto 2</h5>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap-js/bootstrap.min.js"></script>
+  </body>
+</html>

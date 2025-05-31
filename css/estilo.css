@@ -1,0 +1,531 @@
+@media (max-width: 768px){ /* mediaquery para telefono */
+    header {
+        
+        height: auto; /* Ajusta la altura automáticamente si es necesario */
+        padding: 10px 15px; /* Ajusta el espaciado interno del header */
+        
+    }
+
+
+    .inicio-animation{
+        opacity: 0;
+        animation: izquierda 1s ease forwards;
+    }
+    
+    .imagen-logo{
+        margin: 0 !important;
+    }
+    
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; /* Centra los elementos horizontalmente */
+        width: 100%; /* Asegura que ocupen todo el ancho */
+        padding: 0 10px; /* Espaciado más ajustado */
+    }
+
+    .navbar-brand img {
+        width: 90px; /* Reducción del tamaño del logo */
+        height: auto;
+        margin-right: 10px; /* Espacio reducido con el texto */
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.2rem; /* Ajuste del tamaño para móviles */
+        margin: 0; /* Quita márgenes innecesarios */
+    }
+
+    .navbar-toggler {
+        margin-left: 10px;
+        margin-right: 10px; /* Ajusta la posición del botón para evitar desbordes */
+    }
+
+
+
+
+    #inicio {
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        text-align: center; /* Centra el texto dentro de cada bloque */
+        padding: 0 20px;
+        
+    }
+
+    .inicio-animation{
+        width: 100%;
+    }
+
+    .contenido-inicio{
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .inicio-animation h2 {
+        text-align: center; /* Centra el texto horizontalmente */
+        white-space: normal;
+        margin: 0 auto; /* Asegura márgenes iguales a ambos lados */
+        max-width: 100%; /* Limita el ancho máximo al tamaño de la pantalla */
+        font-size: 2rem !important;
+        white-space: nowrap;
+    
+     
+        
+ 
+    
+     
+       
+    }
+
+    .inicio-animation p{
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 10px;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .seleccion-img {
+        margin: 20px 0; /* Espaciado alrededor de la imagen */
+    }
+
+    .contenedor-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+       
+    }
+
+    
+    .btn-inicio{
+        display: flex !important;
+        justify-content: center;
+        margin-top: 10px;
+   
+       
+    }
+
+
+
+}
+
+
+    
+
+ 
+
+    
+
+
+  
+
+
+
+@media (max-width: 1024px){
+    .nav-item{
+        font-size: 1.4rem;
+    }
+
+    .card-title{
+        font-size: 1.4rem;
+    }
+
+    .footer-heading{
+        font-size: 1.8rem;
+    }
+
+}
+
+
+
+
+
+
+
+@keyframes fadeSlide{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    } to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes derecha{
+    from{
+        opacity: 0;
+        transform: translateX(200px);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes izquierda{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+html {
+    font-family: system-ui, sans-serif;
+    
+}
+
+body {
+    background-color: rgb(11, 0, 20);
+    color: #fff;
+    padding-top: 80px;
+    
+
+}
+
+header{
+    position: fixed; /* Fija el header */
+    top: 0; /* Posiciona el header en la parte superior */
+    left: 0; /* Alinea el header al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 999; /* Asegura que el header esté por encima del contenido */
+    padding-top: 0; /* Elimina cualquier relleno extra */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+
+
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+
+.proyectos {
+    background-color: rgb(11, 0, 20); /* Fondo oscuro de la sección */
+}
+
+
+
+
+
+.card {
+    border-radius: 14px 14px 0 0; /* Bordes suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra moderna */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animación suave */
+}
+
+.card-hover:hover {
+
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.466); /* Sombra más pronunciada */
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; /* Bordes superiores redondeados para la imagen */
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.badge {
+    font-size: 0.85rem; /* Tamaño compacto */
+    padding: 0.5em 0.8em; /* Espaciado interno */
+    align-items: center;
+    gap: 5px;
+}
+
+.badge i {
+    font-size: 1.4rem; /* Tamaño del icono dentro de la pastilla */
+}
+
+.btn-card{
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efecto suave */
+}
+
+.btn-card:hover {
+    transform: scale(1.1); /* Botón más grande al hacer hover */
+    background-color: rgb(150, 0, 160);
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efecto dinámico */
+}
+
+
+#inicio .inicio-animation {
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    margin: 0; /* Evita márgenes adicionales */
+}
+
+/* Asegura que se distribuyan bien los elementos */
+#inicio .w-50 {
+    flex: 0 0 50%; /* Los elementos ocupan la mitad del contenedor */
+}
+
+.nav-item{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+    animation: fadeSlide 0.8s ease forwards;
+}
+
+
+.nav-item:hover{
+    color:  rgb(255, 204, 102);
+    transition: 0.4s;
+
+}
+
+
+
+.nav-item:first-child{
+    animation-delay: 0s;
+}
+
+.nav-item:nth-child(2){
+    animation-delay: 200ms;
+}
+
+.nav-item:nth-child(3){
+    animation-delay: 400ms;
+}
+
+.nav-item:nth-child(4){
+    animation-delay: 600ms;
+}
+
+.nav-item:nth-child(5){
+    animation-delay: 800ms;
+}
+
+
+a img {
+    transition: transform 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: rgb(50, 0, 80); /* Fondo oscuro */
+    color: white;
+}
+
+.footer-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: rgb(255, 204, 102); /* Color del enlace */
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animación suave para hover */
+}
+
+.footer-link:hover {
+    color: rgb(255, 255, 255); /* Color al hacer hover */
+}
+
+.social-link {
+
+    margin: 0 10px; /* Espaciado entre íconos */
+    font-size: 1.5rem; /* Tamaño del ícono */
+    color: #ffffff; /* Color inicial */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animación para hover */
+}
+
+.social-link:hover {
+    transform: scale(2); /* Agranda ícono al hacer hover */
+    
+}
+
+.instagram:hover{
+    color: #e4405f ;
+}
+
+
+.whatsapp:hover {
+    color: #1ebe5b;
+}
+
+
+
+.gmail:hover {
+    color: #3d8bf0;
+}
+
+
+
+
+
+button:hover {
+    background-color: rgb(150, 0, 160);
+    border-color: rgb(150, 0, 160);
+    transition: 0.4s ease;
+}
+
+#inicio {
+    margin-top: 2rem;
+}
+
+.destacado {
+    color:  rgb(255, 204, 102);
+
+} 
+
+.navbar-nav .nav-link {
+    color: white !important; /* Fuerza el color blanco */
+    font-weight: bold; /* Resalta los enlaces */
+    transition: color 0.3s ease, transform 0.3s ease; /* Animación suave */
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 204, 102) !important; /* Cambia a color personalizado en hover */
+    transform: scale(1.1); /* Efecto de aumento */
+    text-shadow: 0 0 10px rgba(255, 204, 102, 0.8); /* Resplandor */
+}
+
+.boton-navbar{
+    border-color: rgba(150, 0, 160, 0.8) !important ;
+    transition: 0.3s;
+}
+
+.boton-navbar:hover{
+    background-color: rgba(150, 0, 160, 0.8) !important ;
+    transition: 0.3s;
+    text-shadow: 0 0 10px rgba(150, 0, 160, 0.8);
+}
+
+
+.logo-animation{
+    opacity: 0;
+    animation: fadeSlide 3.2s ease forwards;
+}
+
+.logo-animation:first-child{
+    animation-delay: 1.3s;
+
+}
+
+
+
+
+.gif-animation{
+    animation: izquierda 1s ease forwards;
+}
+
+
+.seleccion{
+    transition: 0.2s;
+
+}
+
+
+.seleccion:hover{
+    border-color: #fff;
+    box-shadow: 0 0 18px #fff;
+    transition: 0.3s;
+
+  
+}
+
+.seleccion-img{
+    transition: 0.3s;
+}
+.seleccion-img:hover{
+    transition: 0.3s;
+    transform: scale(1.04);
+  
+}
+
+.seleccion-proyectos{
+    transition: 0.3s;
+
+}
+
+.seleccion-proyectos:hover{
+    border-color: 20px #fff;
+    transition: 0.3s;
+    
+}
+
+
+#contacto {
+    background-color: rgb(11, 0, 20); /* Fondo oscuro */
+    color: white;
+    border-radius: 10px;
+}
+
+.card-c{
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Bordes sutiles */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación */
+    cursor: pointer;
+}
+
+.card-c:hover {
+    transform: scale(1.05); /* Efecto de aumento */
+    box-shadow: 0 8px 12px rgba(255, 255, 255, 0.8); /* Sombra al hacer hover */
+}
+
+.card h5 {
+    font-size: 1.2rem; /* Tamaño del título */
+}
+
+.card-c p {
+    font-size: 0.9rem; /* Tamaño del texto */
+    color: rgba(255, 255, 255, 0.7); /* Texto ligeramente gris */
+}
+
+.card-c i {
+    font-size: 2rem; /* Tamaño de los iconos */
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+
+
+
+.chat-input input {
+    height: 45px;
+    padding-left: 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.chat-input a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.chat-input a:hover {
+    background-color: rgb(150, 0, 160); /* Hover atractivo */
+    transform: scale(1.1); /* Efecto dinámico */
+}
+
+
+
+
